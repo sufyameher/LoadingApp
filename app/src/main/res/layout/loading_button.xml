@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/buttonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Loading" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.example.loadingapp.LoadingButton
+        android:id="@+id/loadingButton"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:text="Start Loading"
+        android:layout_margin="20dp"
+        android:visibility="invisible"
+        app:backgroundColor="@color/purple_700"
+        app:buttonLoadingColor="@color/purple_700"
+        app:textColor="@color/white"
+        app:loadingText="Loading..."
+        app:completeText="Download Complete"
+        app:textSize="@attr/textSize" />
+</LinearLayout>
